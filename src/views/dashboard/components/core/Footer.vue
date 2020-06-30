@@ -29,7 +29,7 @@
           md="auto"
         >
           <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-            <a href="https://app.pendo-perfserf.pendo-dev.com/">Pendo (perfserf)</a>
+            <a href="https://app.pendo-perfserf.pendo-dev.com/">Pendo (perfserf) Sub: pendo-intenal</a>
           </div>
         </v-col>
       </v-row>

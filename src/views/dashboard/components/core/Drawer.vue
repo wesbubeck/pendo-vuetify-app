@@ -79,7 +79,7 @@
     <template v-slot:append>
       <base-item
         :item="{
-          title: 'Pendo (perfserf)',
+          title: 'Pendo (perfserf) ',
           icon: 'mdi-airplane-takeoff',
           href: 'https://app.pendo-perfserf.pendo-dev.com/',
         }"
