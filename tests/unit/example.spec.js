@@ -1,7 +1,7 @@
-import { shallowMount } from '@vue/test-utils'
-import App from '@/App.vue'
+import { shallowMount } from '@vue/test-utils';
+import App from '@/App.vue';
 
 test('App should work', () => {
-  const wrapper = shallowMount(App)
-  expect(!!wrapper).toBe(true)
-})
+    const wrapper = shallowMount(App);
+    expect(!!wrapper).toBe(true);
+});

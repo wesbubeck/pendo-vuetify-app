@@ -1,25 +1,21 @@
 <template>
-  <base-item-group
-    :item="item"
-    text
-    sub-group
-  />
+    <base-item-group :item="item" text sub-group />
 </template>
 
 <script>
-  export default {
+export default {
     name: 'ItemSubGroup',
 
     props: {
-      item: {
-        type: Object,
-        default: () => ({
-          avatar: undefined,
-          group: undefined,
-          title: undefined,
-          children: [],
-        }),
-      },
-    },
-  }
+        item: {
+            type: Object,
+            default: () => ({
+                avatar: undefined,
+                group: undefined,
+                title: undefined,
+                children: []
+            })
+        }
+    }
+};
 </script>

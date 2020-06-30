@@ -1,112 +1,94 @@
 <template>
-  <v-container
-    id="typography"
-    fluid
-    tag="section"
-  >
-    <base-v-component
-      heading="Typography"
-      link="styles/typography"
-    />
+    <v-container id="typography" fluid tag="section">
+        <base-v-component heading="Typography" link="styles/typography" />
 
-    <v-row
-      align="center"
-      justify="center"
-    >
-      <v-col cols="12">
-        <base-material-card
-          color="green"
-        >
-          <template v-slot:heading>
-            <div class="display-2 font-weight-light">
-              Material Dashboard Heading
-            </div>
+        <v-row align="center" justify="center">
+            <v-col cols="12">
+                <base-material-card color="green">
+                    <template v-slot:heading>
+                        <div class="display-2 font-weight-light">
+                            Material Dashboard Heading
+                        </div>
 
-            <div class="subtitle-1 font-weight-light">
-              Created using Roboto Font Family
-            </div>
-          </template>
-
-          <v-card-text>
-            <v-container
-              class="pa-0"
-              fluid
-            >
-              <v-row
-                v-for="(t, i) in typography"
-                :key="i"
-                align="center"
-              >
-                <v-col
-                  cols="1"
-                  md="3"
-                >
-                  <span
-                    class="tim-note"
-                    v-text="t[0]"
-                  />
-                </v-col>
-
-                <v-col cols="8">
-                  <component
-                    :is="t[2]"
-                    :class="i"
-                  >
-                    <template v-if="i !== 'quote'">
-                      {{ t[1] }}
+                        <div class="subtitle-1 font-weight-light">
+                            Created using Roboto Font Family
+                        </div>
                     </template>
 
-                    <p v-if="i === 'quote'">
-                      {{ t[1] }}
-                    </p>
-                    <small v-if="i === 'quote'">Kanye West, Musician</small>
+                    <v-card-text>
+                        <v-container class="pa-0" fluid>
+                            <v-row
+                                v-for="(t, i) in typography"
+                                :key="i"
+                                align="center"
+                            >
+                                <v-col cols="1" md="3">
+                                    <span class="tim-note" v-text="t[0]" />
+                                </v-col>
 
-                    <template v-if="i === 'small'">
-                      <br>
-                      <small>Use 'small' tag for the headers</small>
-                    </template>
-                  </component>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card-text>
-        </base-material-card>
-      </v-col>
-    </v-row>
-  </v-container>
+                                <v-col cols="8">
+                                    <component :is="t[2]" :class="i">
+                                        <template v-if="i !== 'quote'">
+                                            {{ t[1] }}
+                                        </template>
+
+                                        <p v-if="i === 'quote'">
+                                            {{ t[1] }}
+                                        </p>
+                                        <small v-if="i === 'quote'"
+                                            >Kanye West, Musician</small
+                                        >
+
+                                        <template v-if="i === 'small'">
+                                            <br />
+                                            <small
+                                                >Use 'small' tag for the
+                                                headers</small
+                                            >
+                                        </template>
+                                    </component>
+                                </v-col>
+                            </v-row>
+                        </v-container>
+                    </v-card-text>
+                </base-material-card>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
-  const leader = 'Well, this is what happened. Uh, Ryan’s big project was the website. Which wasn’t doing so well. So Ryan, to give the impression of sales, recorded them twice. Once as offices and once in the website sales, which is what we refer to in the business as misleading the shareholders. Another good term is fraud. The real crime, I think, was the beard.'
-  const leaderShort = leader.slice(0, 105) + '...'
-  const material = 'The Life of Material Dashboard'
-  const small = 'Header with small subtitle'
+const leader =
+    'Well, this is what happened. Uh, Ryan’s big project was the website. Which wasn’t doing so well. So Ryan, to give the impression of sales, recorded them twice. Once as offices and once in the website sales, which is what we refer to in the business as misleading the shareholders. Another good term is fraud. The real crime, I think, was the beard.';
+const leaderShort = leader.slice(0, 105) + '...';
+const material = 'The Life of Material Dashboard';
+const small = 'Header with small subtitle';
 
-  export default {
+export default {
     data: () => ({
-      typography: {
-        'display-4': ['Display 4', material, 'h1'],
-        'display-3': ['Display 3', material, 'h2'],
-        'display-2': ['Display 2', material, 'h3'],
-        'display-1': ['Display 1', material, 'h4'],
-        headline: ['Headline', material, 'h5'],
-        'title text-uppercase': ['Title', material, 'h6'],
-        '': ['Paragraph', leader, 'p'],
-        blockquote: ['Quote', leader, 'blockquote'],
-        'text--disabled': ['Muted Text', leaderShort, 'p'],
-        'primary--text': ['Primary Text', leaderShort, 'p'],
-        'info--text': ['Info Text', leaderShort, 'p'],
-        'success--text': ['Success Text', leaderShort, 'p'],
-        'warning--text': ['Warning Text', leaderShort, 'p'],
-        'danger--text': ['Danger Text', leaderShort, 'p'],
-        small: ['Small Tag', small, 'h2'],
-      },
-    }),
-  }
+        typography: {
+            'display-4': ['Display 4', material, 'h1'],
+            'display-3': ['Display 3', material, 'h2'],
+            'display-2': ['Display 2', material, 'h3'],
+            'display-1': ['Display 1', material, 'h4'],
+            headline: ['Headline', material, 'h5'],
+            'title text-uppercase': ['Title', material, 'h6'],
+            '': ['Paragraph', leader, 'p'],
+            blockquote: ['Quote', leader, 'blockquote'],
+            'text--disabled': ['Muted Text', leaderShort, 'p'],
+            'primary--text': ['Primary Text', leaderShort, 'p'],
+            'info--text': ['Info Text', leaderShort, 'p'],
+            'success--text': ['Success Text', leaderShort, 'p'],
+            'warning--text': ['Warning Text', leaderShort, 'p'],
+            'danger--text': ['Danger Text', leaderShort, 'p'],
+            small: ['Small Tag', small, 'h2']
+        }
+    })
+};
 </script>
 
 <style lang="scss">
-  .tim-note {
+.tim-note {
     bottom: 10px;
     color: #c0c1c2;
     display: block;
@@ -116,5 +98,5 @@
     left: 0;
     margin-left: 20px;
     width: 260px;
-  }
+}
 </style>

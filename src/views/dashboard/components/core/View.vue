@@ -1,17 +1,17 @@
 <template>
-  <v-content>
-    <router-view />
+    <v-content>
+        <router-view />
 
-    <dashboard-core-footer />
-  </v-content>
+        <dashboard-core-footer />
+    </v-content>
 </template>
 
 <script>
-  export default {
+export default {
     name: 'DashboardCoreView',
 
     components: {
-      DashboardCoreFooter: () => import('./Footer'),
-    },
-  }
+        DashboardCoreFooter: () => import('./Footer')
+    }
+};
 </script>

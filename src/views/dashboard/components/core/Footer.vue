@@ -1,83 +1,81 @@
 <template>
-  <v-footer
-    id="dashboard-core-footer"
-  >
-    <v-container>
-      <v-row
-        align="center"
-        no-gutters
-      >
-        <v-col
-          v-for="(link, i) in links"
-          :key="i"
-          class="text-center mb-sm-0 mb-5"
-          cols="auto"
-        >
-          <a
-            :href="link.href"
-            class="mr-0 grey--text text--darken-3"
-            rel="noopener"
-            target="_blank"
-            v-text="link.text"
-          />
-        </v-col>
+    <v-footer id="dashboard-core-footer">
+        <v-container>
+            <v-row align="center" no-gutters>
+                <v-col
+                    v-for="(link, i) in links"
+                    :key="i"
+                    class="text-center mb-sm-0 mb-5"
+                    cols="auto"
+                >
+                    <a
+                        :href="link.href"
+                        class="mr-0 grey--text text--darken-3"
+                        rel="noopener"
+                        target="_blank"
+                        v-text="link.text"
+                    />
+                </v-col>
 
-        <v-spacer class="hidden-sm-and-down" />
+                <v-spacer class="hidden-sm-and-down" />
 
-        <v-col
-          cols="12"
-          md="auto"
-        >
-          <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-            <a :href="teamEnvUrlAndSubLink">{{ teamEnvUrlAndSub }}</a>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-footer>
+                <v-col cols="12" md="auto">
+                    <div
+                        class="body-1 font-weight-light pt-6 pt-md-0 text-center"
+                    >
+                        <a :href="teamEnvUrlAndSubLink">{{
+                            teamEnvUrlAndSub
+                        }}</a>
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+    </v-footer>
 </template>
 
 <script>
-  export default {
+export default {
     name: 'DashboardCoreFooter',
 
     data: () => ({
-      links: [
-        {
-          href: '#',
-          text: 'About Us',
-        },
-        {
-          href: '#',
-          text: 'Blog',
-        },
-        {
-          href: '#',
-          text: 'Licenses',
-        },
-      ],
+        links: [
+            {
+                href: '#',
+                text: 'About Us'
+            },
+            {
+                href: '#',
+                text: 'Blog'
+            },
+            {
+                href: '#',
+                text: 'Licenses'
+            }
+        ]
     }),
     computed: {
-        teamEnvUrlAndSubLink () {
-        const baseUrl = '' // add you baseUrl here ex. 'https://app.pendo-perfserf.pendo-dev.com/'
-        const subId = '' // add your subId here ex. '5634161670881280'
-        const base64EncodedSearchParams = window.btoa(`?after=&subId=${subId}`)
-        return `${baseUrl}/deep-links/${base64EncodedSearchParams}`
-      },
-      teamEnvUrlAndSub () {
-        const teamEnv = '' // add the name of your team env ex. 'perf-serfs'
-        const subName = '' // add your subName ex. 'pendo-internal'
-        return `Pendo ${teamEnv} Sub: ${subName}`
-      },
-    },
-  }
+        teamEnvUrlAndSubLink() {
+            const baseUrl = ''; // add you baseUrl here ex. 'https://app.pendo-perfserf.pendo-dev.com/'
+            const subId = ''; // add your subId here ex. '5634161670881280'
+            const base64EncodedSearchParams = window.btoa(
+                `?after=&subId=${subId}`
+            );
+            return `${baseUrl}/deep-links/${base64EncodedSearchParams}`;
+        },
+        teamEnvUrlAndSub() {
+            const teamEnv = ''; // add the name of your team env ex. 'perf-serfs'
+            const subName = ''; // add your subName ex. 'pendo-internal'
+            return `Pendo ${teamEnv} Sub: ${subName}`;
+        }
+    }
+};
 </script>
 
 <style lang="sass">
-  #dashboard-core-footer
-    a
-      font-size: .825rem
-      font-weight: 500
-      text-decoration: none
-      text-transform: uppercase
+#dashboard-core-footer
+  a
+    font-size: .825rem
+    font-weight: 500
+    text-decoration: none
+    text-transform: uppercase
 </style>
