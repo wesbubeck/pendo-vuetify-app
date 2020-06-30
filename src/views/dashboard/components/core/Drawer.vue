@@ -164,14 +164,14 @@
         }
       },
       teamEnvUrlAndSubLink () {
-        const baseUrl = 'https://app.pendo-perfserf.pendo-dev.com/'
-        const subId = '5634161670881280'
+        const baseUrl = '' // add you baseUrl here ex. 'https://app.pendo-perfserf.pendo-dev.com/'
+        const subId = '' // add your subId here ex. '5634161670881280'
         const base64EncodedSearchParams = window.btoa(`?after=&subId=${subId}`)
         return `${baseUrl}/deep-links/${base64EncodedSearchParams}`
       },
       teamEnvUrlAndSub () {
-        const teamEnv = 'perf-serfs'
-        const subName = 'pendo-internal'
+        const teamEnv = '' // add the name of your team env ex. 'perf-serfs'
+        const subName = '' // add your subName ex. 'pendo-internal'
         return `${teamEnv} ${subName}`
       },
     },
