@@ -45,6 +45,10 @@
 - Run `npm install` or `yarn install` if you use [Yarn](https://yarnpkg.com/en/)
 - Run `npm run dev` or `yarn serve` to start a local development server
 
+### Fix linting errors (linting rules are WIP)
+
+- Run `npm run lint --fix`
+
 ### Deploy to github pages
 
 1. In the vue.config.js update
