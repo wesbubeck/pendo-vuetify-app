@@ -14,6 +14,6 @@ module.exports = {
     },
   },
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/pendo-vuetify-app/'
+    ? '/your-repo-name/'
     : '/',
 }

@@ -13,6 +13,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:wesbubeck/pendo-vuetify-app.git master:gh-pages
+# update correct user-name and repo-name and uncomment line below
+# git push -f git@github.com:<user-name>/<your-repo-name>.git master:gh-pages
 
 cd -
