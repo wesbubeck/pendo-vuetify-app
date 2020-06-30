@@ -1,0 +1,90 @@
+[
+	{
+		"visitor": {
+			"id": "Jimbo121",
+			"email": "jhalp@dunder.com",
+			"full_name": "Jim Halpert",
+			"role": "Account Executive"
+		},
+		"account": {
+			"accountId": "sales"
+		}
+	},
+	{
+		"visitor": {
+			"id": "Pamela123",
+			"email": "beez@dunder.com",
+			"full_name": "Pam Beasley",
+			"role": "Receptionist"
+		},
+		"account": {
+			"accountId": "administrator"
+		}
+	},
+	{
+		"visitor": {
+			"id": "Dwight432",
+			"email": "kingofbeets@dunder.com",
+			"full_name": "Dwight Schrute",
+			"role": "Account Executive"
+		},
+		"account": {
+			"accountId": "sales"
+		}
+	},
+	{
+		"visitor": {
+			"id": "kev334",
+			"email": "kevin@dunder.com",
+			"full_name": "Kevin Malone",
+			"role": "Accountant"
+		},
+		"account": {
+			"accountId": "finance"
+		}
+	},
+	{
+		"visitor": {
+			"id": "micheal121",
+			"email": "scottstots@dunder.com",
+			"full_name": "Micheal Scott",
+			"role": "Manager"
+		},
+		"account": {
+			"accountId": "administrator"
+		}
+	},
+	{
+		"visitor": {
+			"id": "mrs.smirnoff444",
+			"email": "m.palmer@dunder.com",
+			"full_name": "Meredith Palmer",
+			"role": "Accountant"
+		},
+		"account": {
+			"accountId": "finance"
+		}
+	},
+	{
+		"visitor": {
+			"id": "creed999",
+			"email": "cmoney@dunder.com",
+			"full_name": "Creed Bratton",
+			"role": "Quality Control"
+		},
+		"account": {
+			"accountId": "misc"
+		}
+	},
+	{
+		"visitor": {
+			"id": "stanley44",
+			"email": "stantheman@dunder.com",
+			"full_name": "Stanley Hudson",
+			"role": "Account Executive"
+		},
+		"account": {
+			"accountId": "sales"
+		}
+	}
+]
