@@ -75,4 +75,4 @@ cd -
 
 - In terminal you will need to run `bash deploy.sh`
 
-- Make sure you update the snippet and links specific to your env
+- Your github page will be `https://<your-user-name>.github.io/<your-repo-name>/`
