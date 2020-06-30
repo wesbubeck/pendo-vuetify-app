@@ -29,11 +29,7 @@
           md="auto"
         >
           <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-            &copy; 2019, made with
-            <v-icon size="18">
-              mdi-heart
-            </v-icon>
-            by <a href="https://www.creative-tim.com">Creative Tim</a> for a better web.
+            <a href="https://app.pendo-perfserf.pendo-dev.com/">Pendo (perfserf)</a>
           </div>
         </v-col>
       </v-row>
@@ -47,10 +43,6 @@
 
     data: () => ({
       links: [
-        {
-          href: '#',
-          text: 'Creative Tim',
-        },
         {
           href: '#',
           text: 'About Us',

@@ -79,9 +79,9 @@
     <template v-slot:append>
       <base-item
         :item="{
-          title: $t('upgrade'),
-          icon: 'mdi-package-up',
-          to: '/upgrade',
+          title: 'Pendo (perfserf)',
+          icon: 'mdi-airplane-takeoff',
+          href: 'https://app.pendo-perfserf.pendo-dev.com/',
         }"
       />
     </template>

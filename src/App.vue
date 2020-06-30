@@ -13,7 +13,7 @@
   export default {
     name: 'App',
   }
-  console.log('id :>> ', id)
+
   // eslint-disable-next-line no-undef
   pendo.initialize({
     visitor: {
