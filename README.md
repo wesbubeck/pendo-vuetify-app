@@ -1,5 +1,7 @@
 ## Getting Started
 
+### Fork and copy to your own repo
+
 - Fork the `pendo-vuetify-app` repo
 
 - Open Terminal
@@ -31,11 +33,13 @@
 - `teamEnvUrlAndSubLink` computed property add your `baseUrl` and `subId`
 - `teamEnvUrlAndSub` computed property add your `teamEnv` and `subName`
 
-- Run Locally
+### Run Locally
+
 - Run `npm install` or `yarn install` if you use [Yarn](https://yarnpkg.com/en/)
 - Run `npm run dev` or `yarn serve` to start a local development server
 
-- To Deploy to github pages
+### Deploy to github pages
+
 - In the vue.config.js update
 
 ```
