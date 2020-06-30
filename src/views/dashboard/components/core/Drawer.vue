@@ -79,9 +79,9 @@
     <template v-slot:append>
       <base-item
         :item="{
-          title: 'Pendo (perfserf) ',
+          title: teamEnvUrlAndSub,
           icon: 'mdi-airplane-takeoff',
-          href: 'https://app.pendo-perfserf.pendo-dev.com/',
+          href: teamEnvUrlAndSubLink,
         }"
       />
     </template>
@@ -162,6 +162,17 @@
           avatar: true,
           title: this.$t('avatar'),
         }
+      },
+      teamEnvUrlAndSubLink () {
+        const baseUrl = 'https://app.pendo-perfserf.pendo-dev.com/'
+        const subId = '5634161670881280'
+        const base64EncodedSearchParams = window.btoa(`?after=&subId=${subId}`)
+        return `${baseUrl}/deep-links/${base64EncodedSearchParams}`
+      },
+      teamEnvUrlAndSub () {
+        const teamEnv = 'perf-serfs'
+        const subName = 'pendo-internal'
+        return `${teamEnv} ${subName}`
       },
     },
 

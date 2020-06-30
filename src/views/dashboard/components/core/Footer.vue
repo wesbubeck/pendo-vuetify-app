@@ -29,7 +29,7 @@
           md="auto"
         >
           <div class="body-1 font-weight-light pt-6 pt-md-0 text-center">
-            <a href="https://app.pendo-perfserf.pendo-dev.com/">Pendo (perfserf) Sub: pendo-intenal</a>
+            <a :href="teamEnvUrlAndSubLink">{{ teamEnvUrlAndSub }}</a>
           </div>
         </v-col>
       </v-row>
@@ -57,6 +57,19 @@
         },
       ],
     }),
+    computed: {
+      teamEnvUrlAndSubLink () {
+        const baseUrl = 'https://app.pendo-perfserf.pendo-dev.com/'
+        const subId = '5634161670881280'
+        const base64EncodedSearchParams = window.btoa(`?after=&subId=${subId}`)
+        return `${baseUrl}/deep-links/${base64EncodedSearchParams}`
+      },
+      teamEnvUrlAndSub () {
+        const teamEnv = 'perf-serfs'
+        const subName = 'pendo-internal'
+        return `Pendo ${teamEnv} Sub: ${subName}`
+      },
+    },
   }
 </script>
 
