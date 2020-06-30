@@ -22,9 +22,11 @@
 - `$ cd ..`
 - `$ rm -rf pendo-vuetify-app.git`
 
+6. Clone your new repository
+
 ### Code in the app that needs to be updated
 
-1. In the index.html file add your apps snippet inside the script tags
+1. In the `public/index.html` file add your apps snippet inside the script tags
 
 2. To add or change user data that will be used to identify the user is located in the `src/user-data/user-data.json`
 
