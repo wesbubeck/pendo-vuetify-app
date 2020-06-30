@@ -2,34 +2,41 @@
 
 ### Fork and copy to your own repo
 
-- Fork the `pendo-vuetify-app` repo
+1. Fork the `pendo-vuetify-app` repo
 
-- Open Terminal
+2. Open Terminal
 
-- Create a bare clone of of the repo
+3. Create a bare clone of of the repo
+
 - `$ git clone --bare git@github.com:<your-user-name>/pendo-vuetify-app.git`
 
-- Mirror-push to the new repository.
-- `$ cd pendo-vuetify-app.git`
+4. Create a new repo
 
-- Create a new repo
+5. Mirror-push to the new repository.
+
+- `$ cd pendo-vuetify-app.git`
 - `$ git push --mirror git@github.com:<your-user-name>/<your-new-repo>.git`
 
-- Remove the temporary local repository you created earlier.
+5. Remove the temporary local repository you created earlier.
+
 - `$ cd ..`
 - `$ rm -rf pendo-vuetify-app.git`
 
-- Update the app for you environment and subscription
+### Code in the app that needs to be updated
 
-- In the index.html file add you snippet inside the script tags
+1. Update the app for you environment and subscription
 
-- Add or change user data that will be used to identify the user located in the `src/user-data/user-data.json`
+2. In the index.html file add you snippet inside the script tags
 
-- In the Drawer.vue component
+3. Add or change user data that will be used to identify the user located in the `src/user-data/user-data.json`
+
+4. In the Drawer.vue component
+
 - `teamEnvUrlAndSubLink` computed property add your `baseUrl` and `subId`
 - `teamEnvUrlAndSub` computed property add your `teamEnv` and `subName`
 
-- In the Footer.vue component
+5. In the Footer.vue component
+
 - `teamEnvUrlAndSubLink` computed property add your `baseUrl` and `subId`
 - `teamEnvUrlAndSub` computed property add your `teamEnv` and `subName`
 
@@ -40,7 +47,7 @@
 
 ### Deploy to github pages
 
-- In the vue.config.js update
+1. In the vue.config.js update
 
 ```
   publicPath: process.env.NODE_ENV === 'production'
@@ -49,7 +56,7 @@
 
 ```
 
-- In the deploy.sh
+2. In the deploy.sh
 
 ```
 #!/usr/bin/env sh
@@ -73,6 +80,6 @@ cd -
 
 ```
 
-- In terminal you will need to run `bash deploy.sh`
+3. In terminal you will need to run `bash deploy.sh`
 
 - Your github page will be `https://<your-user-name>.github.io/<your-repo-name>/`
