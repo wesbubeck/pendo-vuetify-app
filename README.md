@@ -19,7 +19,7 @@
 
 5. Remove the temporary local repository you created earlier.
 
-- `$ cd ..`
+- `$ cd ../`
 - `$ rm -rf pendo-vuetify-app.git`
 
 6. Clone your new repository
